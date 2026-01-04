@@ -1,6 +1,6 @@
 # :schema node_modules/wrangler/config-schema.json
-name = "stonewave-mp"
-main = "src/worker.js"
+name = "checkerchase"
+main = "worker.js"
 compatibility_date = "2025-12-15"
 
 # Durable Object binding
