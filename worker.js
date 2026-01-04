@@ -27,7 +27,7 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === "/" || url.pathname === "/health") {
-      return json({ ok: true, service: "stonewave-mp" });
+      return json({ ok: true, service: "checker" });
     }
 
     // WebSocket room endpoint
