@@ -1,0 +1,15 @@
+# :schema node_modules/wrangler/config-schema.json
+name = "stonewave-mp"
+main = "src/worker.js"
+compatibility_date = "2025-12-15"
+
+# Durable Object binding
+[durable_objects]
+bindings = [
+  { name = "ROOM", class_name = "Room" }
+]
+
+# SQLite-backed DO class (required on Workers Free)
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Room"]
