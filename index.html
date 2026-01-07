@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>StoneWave Duel</title>
+    <style>
+body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: none; /* Disables browser gestures like pinch-zoom */
+        }
+        canvas {
+            display: block;
+            image-rendering: pixelated; /* Essential for crisp PSX look */
+        }
+    </style>
+<!-- Load Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Load PeerJS (WebRTC) -->
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+</head>
+<body>
+    <!-- Game Scripts -->
+<script src="src/config.js"></script>
+    <script src="src/determinism.js"></script>
+    <script src="src/storage.js"></script>
+    <script src="src/renderer.js"></script>
+    <script src="src/tile.js"></script>
+<script src="src/arena.js"></script>
+<script src="src/shockwave.js"></script>
+<script src="src/particles.js"></script>
+    <script src="src/powerups.js"></script>
+    <script src="src/input.js"></script>
+    <script src="src/net.js"></script>
+    <script src="src/lockstep.js"></script>
+    <script src="src/net_controller.js"></script>
+<script src="src/player.js"></script>
+    <script src="src/ai.js"></script>
+<script src="src/ui.js"></script>
+    <script src="src/audio.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
